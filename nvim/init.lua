@@ -66,11 +66,11 @@ require('packer').startup(function(use)
   use 'tpope/vim-repeat'
   use 'tpope/vim-unimpaired'
 
-  use 'jiangmiao/auto-pairs'
-
   use 'ThePrimeagen/vim-be-good'
 
   use 'ntpeters/vim-better-whitespace'
+
+  use 'maxmellon/vim-jsx-pretty'
 
   use {
     "folke/which-key.nvim",
@@ -150,6 +150,9 @@ vim.api.nvim_create_autocmd('BufWritePost', {
 -- See `:help vim.o`
 vim.g.better_whitespace_enabled=1
 vim.g.strip_whitespace_on_save=1
+
+vim.o.expandtab = true
+vim.o.tabstop = 2
 
 vim.o.scrolloff = 999
 
